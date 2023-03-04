@@ -9,7 +9,7 @@ const MainPage = () => {
   if (typeof window === "object") {
     const html = document.querySelector("html");
     if (html) {
-      html.style.backgroundColor = color ? "red" : "rgb(99, 143, 255)";
+      html.style.backgroundColor = color ? "red" : "blue";
     }
   }
 
