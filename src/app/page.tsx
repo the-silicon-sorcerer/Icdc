@@ -11,7 +11,9 @@ const MainPage = () => {
     if (typeof window === "object") {
       const body = document.querySelector("body");
       if (body) {
-        body.style.backgroundColor = color ? "red" : "rgb(68, 111, 218)";
+        body.style.backgroundColor = color
+          ? "rgb(107, 142, 229)"
+          : "rgb(68, 111, 218)";
       }
     }
     setColor(!color);

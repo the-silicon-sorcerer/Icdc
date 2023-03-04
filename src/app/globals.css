@@ -6,7 +6,8 @@ body {
   height: 97vh;
   display: grid;
   place-items: center;
-  background-color: rgb(68, 111, 218);
+  background-color: rgb(107, 142, 229);
+  transition: all 1s linear;
 }
 
 h1 {
