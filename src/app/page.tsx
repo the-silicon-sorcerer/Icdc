@@ -1,7 +1,9 @@
-import moment from "moment";
+import moment from "moment-timezone";
 import style from "./page.module.css";
 
 const MainPage = () => {
+  moment.tz.setDefault("America/Los_Angeles");
+
   const daysLeft = () => {
     const eventDay = moment("2023-04-20");
     return eventDay.diff(moment(), "days");
