@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: rgb(99, 143, 255);
-}
-
 body {
   height: 97vh;
   display: grid;
