@@ -6,9 +6,11 @@ import { useState } from "react";
 
 const MainPage = () => {
   const [color, setColor] = useState(false);
-  const html = document.querySelector("html");
-  if (html) {
-    html.style.backgroundColor = color ? "red" : "rgb(99, 143, 255)";
+  if (typeof window === "object") {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.backgroundColor = color ? "red" : "rgb(99, 143, 255)";
+    }
   }
 
   const onClick = () => {
