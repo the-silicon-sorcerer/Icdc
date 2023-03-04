@@ -5,11 +5,14 @@ import style from "./page.module.css";
 import { useState } from "react";
 
 const MainPage = () => {
+  const [color, setColor] = useState(false);
   const html = document.querySelector("html");
+  if (html) {
+    html.style.backgroundColor = color ? "red" : "rgb(99, 143, 255)";
+  }
+
   const onClick = () => {
-    html?.style.backgroundColor === "rgb(99, 143, 255)"
-      ? "red"
-      : "rgb(99, 143, 255)";
+    setColor(!color);
   };
 
   const daysLeft = () => {

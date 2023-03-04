@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: rgb(99, 143, 255);
 }
 
 body {
-  height: 100vh;
+  height: 97vh;
   display: grid;
   place-items: center;
   background-color: rgb(99, 143, 255);
